@@ -1,16 +1,51 @@
 ---
-import Button from './ui/Button.astro';
-import Social from '@components/ui/Social.astro';
----
+import { Image } from "@astrojs/image/components";
+import SocialContact from "./ui/SocialContact.astro";
+import contact from "../assets/images/contact.png";
 
+---
+<>
 <section
-	data-testid="contact"
-	id="contact"
-	class="flex flex-col flex-wrap items-center justify-center gap-8 text-black dark:text-white lg:mb-0 lg:h-screen"
+  data-testid="contact"
+  id="contact"
+  class="flex flex-col flex-wrap items-center justify-center text-black dark:text-white lg:mb-0 lg:h-screen"
 >
-	<Button size={'lg'} style={'primary'} name="Contact">Say hello!</Button>
-	<hr class="w-1/2" />
-	<div class="flex gap-8 lg:flex lg:gap-20">
-		<Social />
-	</div>
+  <h2 class="font-monospace text-2xl text-orange lg:text-4xl">Contact</h2>
+  <span class="h-1 w-10 bg-orange"></span>
+ <section class="grid lg:grid-cols-2">
+	<div class="text-center order-2">
+    <article class="p-10">
+      <p class="font-monospace font-semibold">Email Address</p>
+      <p class="font-extralight">breim.dev@gmail.com</p>
+    </article>
+    <article class="p-10">
+      <p class="font-monospace font-semibold">Phone Number</p>
+      <p class="font-extralight">+57 301 3702 999</p>
+    </article>
+  </div>
+  <div class="lg:order-2">
+	<figure class="w-[200px] rounded-lg m-auto">
+		<Image
+			src={contact}
+			alt="imagen"
+            format="png"
+			width={338}
+			height={374}
+            aspectRatio="16:9"
+			loading="eager"
+		/>
+	</figure>
+  </div>
+</section> 
+  
+
+  <span class="h-1 w-1/2 bg-orange"></span>
+  <div class="text-center font-monospace font-semibold p-10">
+    <p>Social Media</p>
+    <div class="flex my-4">
+      <SocialContact />
+    </div>
+  </div>
 </section>
+</>
+
