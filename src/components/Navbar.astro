@@ -1,12 +1,18 @@
 ---
-import Button from '@components/ui/Button.astro';
-import ToggleTheme from '@components/ui/ToggleTheme.astro';
+import { Image } from '@astrojs/image/components'; 
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
+import ToggleTheme from '@components/ui/ToggleTheme.astro';
+import breimDark from "../assets/logos/breimsW.png";
+import breim from "../assets/logos/breimD.png";
 
 const menuitems = [
 	{
 		title: 'About',
 		path: '#about',
+	},
+	{
+		title: "Credentials",
+		path: "#credentials",
 	},
 	{
 		title: 'Projects',
@@ -17,12 +23,35 @@ const menuitems = [
 		path: '#contact',
 	},
 ];
+
+const styleLight = "bg-white backdrop-blur-md bg-opacity-90";
+const styleDark = "dark:bg-black dark:backdrop-blur-md dark:bg-opacity-95";
+
 ---
 
-<header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
+<header data-testId="header" class={`py-4 flex flex-col items-center justify-between lg:flex-row fixed z-10 w-full top-0 right-0 left-0 px-10 lg:px-32 ${styleLight} ${styleDark}`}>
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV">Download CV</Button>
+			<Image
+			class:list={`hidden dark:block`}
+			src={breimDark}
+			alt="imagen"
+            format="png"
+			width={55}
+			height={52}
+            aspectRatio="16:9"
+			loading="eager"
+			/>
+			<Image
+			class:list={`block dark:hidden`}
+			src={breim}
+			alt="imagen"
+            format="png"
+			width={55}
+			height={52}
+            aspectRatio="16:9"
+			loading="eager"
+			/>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
