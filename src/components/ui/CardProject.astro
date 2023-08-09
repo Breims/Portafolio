@@ -1,0 +1,95 @@
+---
+import { Image } from '@astrojs/image/components';
+import github from "../../assets/logos/github.svg";
+import world from "../../assets/logos/world.svg";
+interface Props {
+  img?: string;
+  url?: string;
+  title?: string;
+  description?: string;
+  urlrepo?: string;
+  urllive?: string;
+  ruteTech?: string[];
+  children?: HTMLElement | HTMLElement[];
+}
+
+const {
+  url = "url",
+  img = "Project img",
+  title = "Project title",
+  description = "Project description",
+  urlrepo = "url rpo",
+  urllive = "url live",
+  ruteTech,
+} = Astro.props;
+---
+<article
+		data-testId="card"
+		class="w-[330px] md:w-auto m-4 rounded-xl bg-light shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
+	>
+		<a href={url} aria-label="link to project">
+			<div class="relative flex items-end overflow-hidden rounded-t-xl">
+				<Image
+					src={img}
+					alt={title}
+					aspectRatio="4:4"
+					format="png"
+					width={400}
+					height={220}
+					loading="eager"
+				/>
+			</div>
+		</a>
+		<section class="p-5">
+			<a href={url} target="_blank">
+			  <h5
+				class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-darkness font-monospace"
+			  >
+				{title}
+			  </h5>
+			</a>
+			<p class="mb-3 font-normal text-gray-700 text-faint">
+			  {description}
+			</p>
+		  </section>
+		  <section class="flex justify-between p-5">
+			{
+			  ruteTech && (
+				<div class="flex gap-2">
+				  {ruteTech.map((tech) => (
+					<Image
+					  src={tech}
+					  alt="javascript"
+					  format="svg"
+					  width={25}
+					  height={25}
+					  loading="eager"
+					/>
+				  ))}
+				</div>
+			  )
+			}
+			<div class="flex gap-2">
+			  <a href={urlrepo} target="_blank">
+				<Image
+				  src={github}
+				  alt="imagen"
+				  format="svg"
+				  width={25}
+				  height={25}
+				  loading="eager"
+				/>
+			  </a>
+			  <a href={urllive} target="_blank">
+				<Image
+				  src={world}
+				  alt="imagen"
+				  format="svg"
+				  width={25}
+				  height={25}
+				  loading="eager"
+				/>
+			  </a>
+			</div>
+         </section>
+</article>

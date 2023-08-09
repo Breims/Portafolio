@@ -13,10 +13,10 @@ module.exports = {
 			xl: '1280px',
 		},
 		colors: {
-			black: '#212A3E',
-			light: "#3A4967",
-			orange: '#9BA4B5',
-			white: '#F3F7F9',	
+			darkness: '#212A3E',
+			shadow: "#3A4967",
+			faint: '#9BA4B5',
+			light: '#F3F7F9',	
 		},
 		fontFamily: {
 			// Headings

@@ -3,10 +3,13 @@ import { defineCollection, z } from 'astro:content';
 const projectsCollection = defineCollection({
 	schema: z.object({
 		inProgress: z.boolean(),
+		img: z.string().optional(),
+		url: z.string().optional(),
 		title: z.string(),
-		tags: z.array(z.string()),
-		link: z.string(),
-		img_alt: z.string().optional(),
+		description: z.string(),
+		urlrepo: z.string().optional(),
+        urllive: z.string().optional(),
+		ruteTech: z.array(z.string()).optional(),
 	}),
 });
 

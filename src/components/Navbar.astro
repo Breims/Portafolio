@@ -24,12 +24,12 @@ const menuitems = [
 	},
 ];
 
-const styleLight = "bg-white backdrop-blur-md bg-opacity-90";
-const styleDark = "dark:bg-black dark:backdrop-blur-md dark:bg-opacity-95";
+const styleshadow = "bg-light backdrop-blur-md bg-opacity-90";
+const styleDark = "dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95";
 
 ---
 
-<header data-testId="header" class={`py-4 flex flex-col items-center justify-between lg:flex-row fixed z-10 w-full top-0 right-0 left-0 px-10 lg:px-32 ${styleLight} ${styleDark}`}>
+<header data-testId="header" class={`py-4 flex flex-col items-center justify-between lg:flex-row fixed z-10 w-full top-0 right-0 left-0 px-10 lg:px-32 ${styleshadow} ${styleDark}`}>
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
 			<Image
@@ -53,7 +53,7 @@ const styleDark = "dark:bg-black dark:backdrop-blur-md dark:bg-opacity-95";
 			loading="eager"
 			/>
 			<div class="block lg:hidden">
-				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
+				<MenuIcon class="h-4 w-4 text-darkness dark:text-light" />
 			</div>
 		</div>
 		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
@@ -65,7 +65,7 @@ const styleDark = "dark:bg-black dark:backdrop-blur-md dark:bg-opacity-95";
 								<a
 									aria-label="navigation link"
 									href={item.path}
-									class="flex py-2 text-black hover:text-orange dark:text-white dark:hover:text-orange lg:px-3"
+									class="flex py-2 text-darkness hover:text-faint dark:text-light dark:hover:text-faint lg:px-3"
 								>
 									{item.title}
 								</a>
