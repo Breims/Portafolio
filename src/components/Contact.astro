@@ -2,13 +2,14 @@
 import { Image } from "@astrojs/image/components";
 import SocialContact from "./ui/SocialContact.astro";
 import contact from "@assets/images/contact.png";
+import contactLight from "@assets/images/contactLight.png";
 
 ---
 <>
 <section
   data-testid="contact"
   id="contact"
-  class="flex flex-col flex-wrap items-center justify-center text-darkness dark:text-light lg:mb-0 lg:h-screen"
+  class="flex flex-col flex-wrap items-center justify-center text-darkness dark:text-light lg:my-24"
 >
   <h2 class="font-monospace text-2xl dark:text-faint text-shadow lg:text-4xl">Contact</h2>
   <span class="h-1 w-1/5 dark:bg-faint bg-shadow"></span>
@@ -26,12 +27,23 @@ import contact from "@assets/images/contact.png";
   <div class="lg:order-2">
 	<figure class="w-[200px] rounded-lg m-auto">
 		<Image
-			src={contact}
+			class:list={`hidden dark:block`}
+      src={contact}
 			alt="imagen"
-            format="png"
+      format="png"
 			width={338}
 			height={374}
-            aspectRatio="16:9"
+      aspectRatio="16:9"
+			loading="eager"
+		/>
+    <Image
+      class:list={`dark:hidden block`}
+			src={contactLight}
+			alt="imagen"
+      format="png"
+			width={338}
+			height={374}
+      aspectRatio="16:9"
 			loading="eager"
 		/>
 	</figure>
