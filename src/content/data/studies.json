@@ -1,0 +1,16 @@
+[
+	{
+		"urlStudie": "https://www.uniremington.edu.co/facultades/facultad-de-ingenierias/desarrollo-de-software-presencial/",
+		"imgStudie": "/assets/logos/uniremington.png",
+		"altStudie": "Software Development Technology",
+		"titleStudie": "Software Development Technology",
+		"corporationStudie": "Uniremington || 2022 - in progress"
+	},
+    {
+		"urlStudie": "https://oferta.senasofiaplus.edu.co/sofia-oferta/inicio-sofia-plus.html",
+		"imgStudie": "/assets/logos/sena.png",
+		"altStudie": "Software Test Processing",
+		"titleStudie": "Software Test Processing",
+		"corporationStudie": "SENA || 2023 - in progress"
+	}
+]

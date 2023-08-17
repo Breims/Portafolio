@@ -8,11 +8,12 @@ import breims from "@assets/images/breims.png";
 	data-testid="hero"
 	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
 >
-	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
-		<div>
-			<h1 class="mb-10 font-monospace text-3xl text-faint lg:text-5xl">
-				Hi! My name is <span class="dark:text-light text-darkness">Brayan Mercado</span> and I am a web developer.
-			</h1>
+	<div class="grid place-content-between lg:mb-0">
+		<div class="grid place-items-center mb-10 px-2">
+			<p class="font-monospace dark:text-light text-darkness text-4xl lg:text-[5.5rem]">
+			Brayan Mercado</p>
+			<span class="text-faint lg:text-5xl text-xl">Web Developer</span>
+			<span class="mb-6 ml-2 h-1 w-10 bg-shadow dark:bg-faint"></span>
 		</div>
 		<div class="mb-10 flex gap-10 justify-center">
 			<SocialHero />

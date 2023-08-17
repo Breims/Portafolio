@@ -1,5 +1,5 @@
 ---
-import CardProject from "./ui/CardProject.astro";
+import CardProject from "./CardProject.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("projects");
@@ -8,7 +8,7 @@ const projects = await getCollection("projects");
 <section
 	data-testid="projects"
 	id="projects"
-	class="grid place-content-center place-items-center mb-20"
+	class="h-screen grid place-content-center place-items-center"
 >
 	<h2 class="font-monospace text-2xl dark:text-faint text-darkness lg:text-4xl">Projects</h2>
 	<span class="mb-10 h-1 w-10 bg-faint"></span>

@@ -16,7 +16,8 @@ module.exports = {
 			darkness: '#212A3E',
 			shadow: "#3A4967",
 			faint: '#9BA4B5',
-			light: '#F3F7F9',	
+			light: '#F3F7F9',
+			green: "#96C93EC7",	
 		},
 		fontFamily: {
 			// Headings
