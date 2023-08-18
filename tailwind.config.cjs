@@ -20,7 +20,7 @@ module.exports = {
 			green: '#96C93EC7',
 		},
 		fontFamily: {
-			Code: ["Code", "Code"],
+			Code: ["Code", "monospace"],
 			Raleway: ["Raleway", "sans"],
 		},
 	},
