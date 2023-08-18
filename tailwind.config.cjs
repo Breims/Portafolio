@@ -14,31 +14,14 @@ module.exports = {
 		},
 		colors: {
 			darkness: '#212A3E',
-			shadow: "#3A4967",
+			shadow: '#3A4967',
 			faint: '#9BA4B5',
 			light: '#F3F7F9',
-			green: "#96C93EC7",	
+			green: '#96C93EC7',
 		},
 		fontFamily: {
-			// Headings
-			sans: ['Inter', 'sans-serif'],
-			// Base text
-			monospace: ['Inconsolata', 'monospace'],
-		},
-		fontSize: {
-			xs: '.75rem',
-			sm: '.875rem',
-			tiny: '.875rem',
-			base: '1rem',
-			lg: '1.125rem',
-			xl: '1.25rem',
-			'2xl': '1.5rem',
-			'3xl': '1.875rem',
-			'4xl': '2.25rem',
-			'5xl': '3rem',
-		},
-		letterSpacing: {
-			wide: '.025em',
+			CODE: ['CODE', 'monospace'],
+			Raleway: ["Raleway", "sans"],
 		},
 	},
 	plugins: [
