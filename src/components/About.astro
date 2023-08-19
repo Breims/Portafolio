@@ -1,6 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
-import aboutMe from "@assets/images/aboutMe.webp";
+import aboutMeCover from "@assets/images/aboutMeCover.webp";
 ---
 
 <section data-testid="about" id="about" class="lg:h-screen grid place-content-center mt-10 lg:mt-0">
@@ -11,7 +11,7 @@ import aboutMe from "@assets/images/aboutMe.webp";
 	<div class="grid place-items-center lg:grid-cols-2">
 		
 		<figure class="hidden lg:block w-full">
-			<Image class:list={`m-auto w-[90%] rounded-3xl shadow-lg`} src={aboutMe} alt="SetUp" format="png" width={500} height={400} aspectRatio="4:4" />
+			<Image class:list={`m-auto w-[90%] rounded-3xl shadow-lg`} src={aboutMeCover} alt="SetUp" format="png" width={500} height={400} aspectRatio="4:4" />
 		</figure>
 		
 		<section class="h-full w-full p-4 text-darkness dark:text-light text-sm md:text-lg font-normal font-Raleway">

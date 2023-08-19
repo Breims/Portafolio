@@ -1,6 +1,6 @@
 ---
 inProgress: false
-img: /assets/images/sircraftPage.webp
+img: /assets/images/sircraftPageCover.webp
 url: https://sircraft.vercel.app/
 title: SirCraft Page
 description: Developed a React website enhanced with Tailwind CSS, delivering dynamic design and a responsive user experience.

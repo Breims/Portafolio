@@ -1,7 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import SocialHero from "./ui/SocialHero.astro";
-import breims from "@assets/images/breims.webp";
+import breimsCover from "@assets/images/breimsCover.webp";
 ---
 
 <section
@@ -23,7 +23,7 @@ id="home"
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 lg:w-2/5 items-center justify-center">
 		<Image
 			class:list={`rounded-full m-auto bg-darkness dark:bg-light`}
-			src={breims}
+			src={breimsCover}
 			alt="Coding girl"
 			aspectRatio="4:4"
 			format="png"

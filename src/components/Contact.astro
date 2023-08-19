@@ -1,8 +1,8 @@
 ---
 import { Image } from "@astrojs/image/components";
 import SocialContact from "./ui/SocialContact.astro";
-import contact from "@assets/images/contact.webp";
-import contactLight from "@assets/images/contactLight.webp";
+import contactPegatina from "@assets/images/contactPegatina.webp";
+import contactPegatinaLight from "@assets/images/contactPegatinaLight.webp";
 ---
 
 <section
@@ -32,7 +32,7 @@ import contactLight from "@assets/images/contactLight.webp";
 			<figure class="m-auto w-[200px] rounded-lg">
 				<Image
 					class:list={`hidden dark:block`}
-					src={contact}
+					src={contactPegatina}
 					alt="imagen"
 					format="png"
 					width={338}
@@ -42,7 +42,7 @@ import contactLight from "@assets/images/contactLight.webp";
 				/>
 				<Image
 					class:list={`dark:hidden block`}
-					src={contactLight}
+					src={contactPegatinaLight}
 					alt="imagen"
 					format="png"
 					width={338}
