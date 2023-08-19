@@ -23,7 +23,7 @@
 </button>
 
 <script>
-	let mybutton = document.getElementById('btn-back-to-top') as HTMLButtonElement;
+	let mybutton = document.getElementById("btn-back-to-top") as HTMLButtonElement;
 	window.onscroll = function (event) {
 		event.preventDefault();
 		scrollFunction();
@@ -31,13 +31,13 @@
 
 	function scrollFunction() {
 		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = 'block';
+			mybutton.style.display = "block";
 		} else {
-			mybutton.style.display = 'none';
+			mybutton.style.display = "none";
 		}
 	}
 
-	mybutton.addEventListener('click', backToTop);
+	mybutton.addEventListener("click", backToTop);
 
 	function backToTop(event) {
 		event.preventDefault();

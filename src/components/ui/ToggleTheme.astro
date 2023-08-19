@@ -29,26 +29,26 @@
 </style>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function ready() {
+	document.addEventListener("DOMContentLoaded", function ready() {
 		const button = document.querySelector(
-			'.theme-switch input[type="checkbox"]'
+			".theme-switch input[type='checkbox']"
 		) as HTMLInputElement;
 
 		const switchTheme = () => {
-			document.documentElement.classList.toggle('dark');
-			if (document.documentElement.classList.contains('dark')) {
-				localStorage.setItem('theme', 'dark');
+			document.documentElement.classList.toggle("dark");
+			if (document.documentElement.classList.contains("dark")) {
+				localStorage.setItem("theme", "dark");
 			}
 		};
 
 		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			localStorage.theme === "dark" ||
+			(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
 		) {
 			switchTheme();
 		}
 
-		button.addEventListener('click', () => {
+		button.addEventListener("click", () => {
 			switchTheme();
 		});
 	});

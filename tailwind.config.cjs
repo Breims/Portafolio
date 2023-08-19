@@ -1,26 +1,26 @@
-const plugin = require('tailwindcss/plugin');
+const plugin = require("tailwindcss/plugin");
 
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	darkMode: 'class',
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+	darkMode: "class",
 	theme: {
 		screens: {
-			xs: '480px',
-			sm: '640px',
-			md: '768px',
-			lg: '1024px',
-			xl: '1280px',
+			xs: "480px",
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
 		},
 		colors: {
-			darkness: '#212A3E',
-			shadow: '#3A4967',
-			faint: '#9BA4B5',
-			light: '#F3F7F9',
-			green: '#96C93EC7',
+			darkness: "#212A3E",
+			shadow: "#3A4967",
+			faint: "#9BA4B5",
+			light: "#F3F7F9",
+			green: "#96C93EC7",
 		},
 		fontFamily: {
-			Code: ["Code", "monospace"],
+			Code: ["Code", "Raleway"],
 			Raleway: ["Raleway", "sans"],
 		},
 	},
@@ -28,11 +28,11 @@ module.exports = {
 		plugin(function ({ addBase, theme }) {
 			addBase({
 				h2: {
-					letterSpacing: theme('letterSpacing.wide'),
-					fontWeight: 'bold',
+					letterSpacing: theme("letterSpacing.wide"),
+					fontWeight: "bold",
 				},
 				li: {
-					letterSpacing: theme('letterSpacing.wide'),
+					letterSpacing: theme("letterSpacing.wide"),
 				},
 			});
 		}),

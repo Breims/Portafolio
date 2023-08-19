@@ -1,14 +1,14 @@
 ---
-import { Image } from '@astrojs/image/components';
-import CardProject from './CardProject.astro';
-import { getCollection } from 'astro:content';
-import js from '/public/assets/logos/javascript.svg';
-import ts from '/public/assets/logos/typescript.svg';
-import react from '/public/assets/logos/react.svg';
-import next from '/public/assets/logos/nextjs.svg';
-import tailwind from '/public/assets/logos/tailwindcss.svg';
+import { Image } from "@astrojs/image/components";
+import CardProject from "./CardProject.astro";
+import { getCollection } from "astro:content";
+import js from "/public/assets/logos/javascript.svg";
+import ts from "/public/assets/logos/typescript.svg";
+import react from "/public/assets/logos/react.svg";
+import next from "/public/assets/logos/nextjs.svg";
+import tailwind from "/public/assets/logos/tailwindcss.svg";
 
-const projects = await getCollection('projects');
+const projects = await getCollection("projects");
 ---
 
 <section

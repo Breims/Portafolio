@@ -1,35 +1,35 @@
 ---
-import { Image } from '@astrojs/image/components';
-import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
-import ToggleTheme from '@components/ui/ToggleTheme.astro';
-import breimDark from '@assets/logos/breimsW.png';
-import breim from '@assets/logos/breimD.png';
+import { Image } from "@astrojs/image/components";
+import { Astronav, MenuIcon, MenuItems } from "astro-navbar";
+import ToggleTheme from "@components/ui/ToggleTheme.astro";
+import breimDark from "@assets/logos/breimsW.png";
+import breim from "@assets/logos/breimD.png";
 
 const menuitems = [
 	{
-		title: 'Home',
-		path: '#home',
+		title: "Home",
+		path: "#home",
 	},
 	{
-		title: 'About',
-		path: '#about',
+		title: "About",
+		path: "#about",
 	},
 	{
-		title: 'Projects',
-		path: '#projects',
+		title: "Projects",
+		path: "#projects",
 	},
 	{
-		title: 'Credentials & Studies',
-		path: '#credentials',
+		title: "Credentials & Studies",
+		path: "#credentials",
 	},
 	{
-		title: 'Contact',
-		path: '#contact',
+		title: "Contact",
+		path: "#contact",
 	},
 ];
 
-const styleshadow = 'bg-light backdrop-blur-md bg-opacity-90';
-const styleDark = 'dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95';
+const styleshadow = "bg-light backdrop-blur-md bg-opacity-90";
+const styleDark = "dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95";
 ---
 
 <header
@@ -88,8 +88,8 @@ const styleDark = 'dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95';
 	</Astronav>
 </header>
 <script>
-	const logoBreim = document.getElementById('logo') as HTMLAnchorElement;
-	logoBreim.addEventListener('click', (event: MouseEvent) => {
+	const logoBreim = document.getElementById("logo") as HTMLAnchorElement;
+	logoBreim.addEventListener("click", (event: MouseEvent) => {
 		event.preventDefault();
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;
