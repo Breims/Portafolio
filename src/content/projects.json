@@ -1,0 +1,25 @@
+[
+	{
+		"img": "/assets/images/sircraft.webp",
+		"url": "https://sircraft.vercel.app/",
+		"title": "SirCraft Page",
+		"description": "Developed a React website enhanced with Tailwind CSS, delivering dynamic design and a responsive user experience.",
+		"urlrepo": "https://github.com/Breims/sircraft",
+		"urllive": "https://sircraft.vercel.app/",
+		"ruteTech": [
+			"/assets/logos/javascript.svg",
+			"/assets/logos/nextjs.svg",
+			"/assets/logos/tailwindcss.svg"
+		]
+	},
+	{
+		"img": "/assets/images/projects.webp",
+		"title": "Project",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+	},
+	{
+		"img": "/assets/images/projects.webp",
+		"title": "Project",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+	}
+]

@@ -16,7 +16,7 @@
 		"paths": {
 			"@components/*": ["components/*"],
 			"@layouts/*": ["layouts/*"],
-			"@assets/*": ["assets/*"],
+			"@assets/*": ["../public/assets/*"],
 			"@pages/*": ["pages/*"],
 			"@content/*": ["content/*"]
 		}

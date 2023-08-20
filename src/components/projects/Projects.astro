@@ -1,14 +1,22 @@
 ---
 import { Image } from "@astrojs/image/components";
+import projectsList from "@content/projects.json";
 import CardProject from "./CardProject.astro";
-import { getCollection } from "astro:content";
-import js from "/public/assets/logos/javascript.svg";
-import ts from "/public/assets/logos/typescript.svg";
-import react from "/public/assets/logos/react.svg";
-import next from "/public/assets/logos/nextjs.svg";
-import tailwind from "/public/assets/logos/tailwindcss.svg";
+import js from "@assets/logos/javascript.svg";
+import ts from "@assets/logos/typescript.svg";
+import react from "@assets/logos/react.svg";
+import next from "@assets/logos/nextjs.svg";
+import tailwind from "@assets/logos/tailwindcss.svg";
 
-const projects = await getCollection("projects");
+interface ProjectsList {
+	img: string;
+	url: string;
+	title: string;
+	description: string;
+	urlrepo: string;
+	urllive: string;
+	ruteTech: string[]
+}
 ---
 
 <section
@@ -75,15 +83,15 @@ const projects = await getCollection("projects");
 	</div>
 	<div class="w-full grid grid-flow-col lg:grid-flow-row lg:grid-cols-3 xxl:grid-cols-4 p-4 xl:p-8 gap-2 lg:gap-20 xxl:gap-10 overflow-x-auto scrolling-touch">
 		{
-			projects.map((project) => (
+			projectsList.map((project: ProjectsList) => (
 				<CardProject
-					img={project.data.img}
-					url={project.data.url}
-					title={project.data.title}
-					description={project.data.description}
-					urlrepo={project.data.urlrepo}
-					urllive={project.data.urllive}
-					ruteTech={project.data.ruteTech}
+					img={project.img}
+					url={project.url}
+					title={project.title}
+					description={project.description}
+					urlrepo={project.urlrepo}
+					urllive={project.urllive}
+					ruteTech={project.ruteTech}
 				/>
 			))
 		}
