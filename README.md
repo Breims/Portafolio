@@ -5,10 +5,9 @@ This is my personal portfolio, designed and developed using Astro, Tailwind CSS,
 ```
 > 🚀 Explore your creativity and have fun with this project!
 
-![just-the-basics]
-<figure align="center">
-  <img src="/public/assets/images/web.webp" alt="Web Screenshot" width="400"/>
-  <img src="/public/assets/images/mobile.webp" alt="Mobile Screenshot" width="200"/>
+<figure style="display: inline-block;">
+  <img src="/public/assets/images/web.webp" alt="Web Screenshot" width="600"/>
+  <img src="/public/assets/images/mobile.webp" alt="Mobile Screenshot" width="600"/>
 </figure>
 
 ## Requirements

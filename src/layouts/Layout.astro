@@ -1,13 +1,13 @@
 ---
-import Footer from "@components/Footer.astro";
-import Navbar from "@components/Navbar.astro";
-import { SEO } from "astro-seo";
+import Footer from '@components/Footer.astro';
+import Navbar from '@components/Navbar.astro';
+import { SEO } from 'astro-seo';
 
 export interface LayoutProps {
 	title: string;
 }
 
-const { title = "Brayan Mercado" } = Astro.props as LayoutProps;
+const { title = 'Brayan Mercado' } = Astro.props as LayoutProps;
 ---
 
 <!DOCTYPE html>
@@ -25,20 +25,14 @@ const { title = "Brayan Mercado" } = Astro.props as LayoutProps;
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="theme-color" content="#ffffff" />
+
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@300;400;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Raleway:wght@400;600;700&family=Titillium+Web:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="font/Code-Black.ttf" rel="stylesheet" />
-		<link href="font/Code-Bold.ttf" rel="stylesheet" />
-		<link href="font/Code-Light.ttf" rel="stylesheet" />
-		<link href="font/Code-Bold.ttf" rel="stylesheet" />
-		<link href="font/Code.ttf" rel="stylesheet" />
 		<title>{title}</title>
 	</head>
-	<body
-		class="lg:mx-14 xxl:mx-28 bg-light dark:bg-darkness xs:text-[16px] md:text-[18px]"
-	>
+	<body class="bg-light dark:bg-darkness xs:text-[16px] md:text-[18px] lg:mx-14 xxl:mx-28">
 		<Navbar />
 		<slot />
 		<Footer />
