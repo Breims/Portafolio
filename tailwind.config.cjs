@@ -10,13 +10,15 @@ module.exports = {
 			sm: "640px",
 			md: "768px",
 			lg: "1024px",
-			xl: "1280px",
+			xl: "1366px",
+			xxl: "1920px", 
 		},
 		colors: {
 			darkness: "#212A3E",
-			shadow: "#3A4967",
+			shadow: "#394867",
 			faint: "#9BA4B5",
-			light: "#F3F7F9",
+			bond: "#e7eaf6",
+			light: "#F1F6F9",
 			green: "#96C93EC7",
 		},
 		fontFamily: {

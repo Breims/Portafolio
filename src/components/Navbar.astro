@@ -11,7 +11,7 @@ const menuitems = [
 		path: "#home",
 	},
 	{
-		title: "About",
+		title: "About me",
 		path: "#about",
 	},
 	{
@@ -19,7 +19,7 @@ const menuitems = [
 		path: "#projects",
 	},
 	{
-		title: "Credentials & Studies",
+		title: "Studies",
 		path: "#credentials",
 	},
 	{
@@ -34,13 +34,13 @@ const styleDark = "dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95";
 
 <header
 	data-testId="header"
-	class={`py-4 flex flex-col items-center justify-between lg:flex-row fixed z-10 w-full top-0 right-0 left-0 px-10 lg:px-32 font-Raleway uppercase font-bold ${styleshadow} ${styleDark}`}
+	class={`py-4 flex flex-col items-center justify-between lg:flex-row fixed z-10 w-full top-0 right-0 left-0 px-10 lg:px-14 xxl:px-36 font-Raleway uppercase font-bold ${styleshadow} ${styleDark}`}
 >
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
 			<figure id="logo">
 				<Image
-					class:list={`hidden dark:block`}
+					class:list={`hidden dark:block h-auto w-12`}
 					src={breimDark}
 					alt="imagen"
 					format="png"
@@ -50,7 +50,7 @@ const styleDark = "dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95";
 					loading="eager"
 				/>
 				<Image
-					class:list={`block dark:hidden`}
+					class:list={`block dark:hidden h-auto w-12`}
 					src={breim}
 					alt="imagen"
 					format="png"
@@ -82,7 +82,7 @@ const styleDark = "dark:bg-darkness dark:backdrop-blur-md dark:bg-opacity-95";
 						</>
 					))
 				}
-				<li><ToggleTheme /></li>
+				<li class="lg:m-auto"><ToggleTheme /></li>
 			</ul>
 		</MenuItems>
 	</Astronav>

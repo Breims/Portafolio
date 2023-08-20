@@ -14,17 +14,18 @@ const projects = await getCollection("projects");
 <section
 	data-testid="projects"
 	id="projects"
-	class="mt-16 grid place-content-center place-items-center lg:mt-0 lg:h-screen"
+	class="mt-16 p-8 lg:p-0 lg:mt-0"
 >
-	<header class="flex w-full flex-col items-center justify-center lg:mb-10">
-		<h2 class="font-Code uppercase text-2xl text-darkness dark:text-faint lg:text-4xl">Projects</h2>
-		<span class="mb-2 h-1 w-10 bg-darkness dark:bg-faint lg:mb-6"></span>
+	<header class="grid place-content-center place-items-center lg:mb-10">
+		<h2 class="font-Code uppercase text-2xl text-shadow dark:text-faint lg:text-4xl">Projects</h2>
+		<span class="h-1 w-10 bg-shadow dark:bg-faint"></span>
 	</header>
-	<div class="mb-6 flex items-center lg:mr-auto">
-		<h1 class="mx-6 hidden font-Code text-xl font-medium text-darkness dark:text-faint lg:block">
+
+	<div class="flex items-center justify-center lg:justify-start p-8 lg:mr-auto">
+		<h1 class="hidden font-Code text-xl font-bold text-darkness dark:text-faint lg:block">
 			My Favorite Tech
 		</h1>
-		<section class="my-4 flex">
+		<section class="m-2 flex">
 			<Image
 				class:list={`h-8 lg:h-10`}
 				src={js}
@@ -72,7 +73,7 @@ const projects = await getCollection("projects");
 			/>
 		</section>
 	</div>
-	<div class="scrolling-touch mb-5 grid w-full grid-flow-col gap-4 overflow-x-auto p-4 lg:mb-10">
+	<div class="w-full grid grid-flow-col lg:grid-flow-row lg:grid-cols-3 xxl:grid-cols-4 p-4 xl:p-8 gap-2 lg:gap-20 xxl:gap-10 overflow-x-auto scrolling-touch">
 		{
 			projects.map((project) => (
 				<CardProject
@@ -91,7 +92,7 @@ const projects = await getCollection("projects");
 		href="https://github.com/Breims?tab=repositories"
 		target="_blank"
 		rel="noopener"
-		class="flex items-center justify-center text-center font-Raleway text-xs text-darkness hover:text-faint dark:text-light dark:hover:text-faint md:text-base"
+		class="flex items-center justify-center text-center font-Raleway font-semibold text-shadow dark:text-faint hover:text-faint dark:hover:text-bond md:text-base lg:text-lg lg:mb-10"
 		aria-label="link to repository"
 	>
 		View full private projects archive
