@@ -18,7 +18,7 @@
 			"@layouts/*": ["layouts/*"],
 			"@assets/*": ["../public/assets/*"],
 			"@pages/*": ["pages/*"],
-			"@content/*": ["content/*"]
+			"@collection/*": ["collection/*"]
 		}
 	}
 }
