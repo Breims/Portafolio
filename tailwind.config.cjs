@@ -32,6 +32,7 @@ module.exports = {
 		  }
 	},
 	plugins: [
+		require('tailwindcss-animated'),
 		plugin(function ({ addBase, theme }) {
 			addBase({
 				h2: {
